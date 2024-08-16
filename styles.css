@@ -1,0 +1,168 @@
+body, html {
+    width: 100%; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: radial-gradient(circle at top left, #AEE1F0 30%, #67C6E3 60%, #8AD5EA 80%);
+    background-repeat: no-repeat; background-size: cover;
+    display: block;
+}
+.nav-bar {
+    width: 85%; height: 130px; background-color: white; opacity: 75%;
+    margin: 0 auto; margin-top: 1%; border-radius: 15px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.nav-bar * {color: black; text-decoration: none;}
+.user-nav-bar {
+    width: 100%; height: 30%; display: flex;
+    flex-direction: row; justify-content: space-between;
+    align-items: center;
+}
+.user-nav-bar h4, .user-nav-bar a {
+    margin: 0; padding: 0; font-size: 15px; padding: 0 3%;
+}
+.seperator-line {
+    width: 80%; height: 1px; background-color: #67C6E3;
+}
+.link-nav-bar {
+    width: 100%; height: 50%; display: flex;
+    justify-content: start; align-items: center; gap: 8%;
+}
+.link-nav-bar h3 {
+    font-size: 30px; padding: 0 3%;
+}
+.nav-links {
+    display: flex; gap: 10%; font-size: 12px; align-items: center;
+    flex-direction: row; height: 100%;
+}
+.nav-links a {position: relative; color: black; text-decoration: none; padding-bottom: 5px;}
+.nav-links a::after {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 2px; background-color: #67C6E3; transition: width 0.3s ease;}
+.nav-links a:hover::after {width: 100%;}
+
+body, html {
+    width: 100%; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: radial-gradient(circle at top left, #AEE1F0 30%, #67C6E3 60%, #8AD5EA 80%);
+    background-repeat: no-repeat; background-size: cover;
+    display: block;
+}
+.nav-bar {
+    width: 85%; height: 130px; background-color: white; opacity: 75%;
+    margin: 0 auto; margin-top: 1%; border-radius: 15px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.nav-bar * {color: black; text-decoration: none;}
+.user-nav-bar {
+    width: 100%; height: 30%; display: flex;
+    flex-direction: row; justify-content: space-between;
+    align-items: center;
+}
+.user-nav-bar h4, .user-nav-bar a {
+    margin: 0; padding: 0; font-size: 15px; padding: 0 3%;
+}
+.seperator-line {
+    width: 80%; height: 1px; background-color: #67C6E3;
+}
+.link-nav-bar {
+    width: 100%; height: 50%; display: flex;
+    justify-content: start; align-items: center; gap: 8%;
+}
+.link-nav-bar h3 {
+    font-size: 30px; padding: 0 3%;
+}
+.nav-links {
+    display: flex; gap: 10%; font-size: 12px; align-items: center;
+    flex-direction: row; height: 100%;
+}
+.nav-links a {position: relative; color: black; text-decoration: none; padding-bottom: 5px;}
+.nav-links a::after {content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 2px; background-color: #67C6E3; transition: width 0.3s ease;}
+.nav-links a:hover::after {width: 100%;}
+
+.action-area {
+    width: 90%; 
+    height: auto; 
+    margin: 0 auto;
+    margin-top: 5vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    padding: 2% 0;
+}
+.information-area, .notification-area {
+    width: 60%; height: 80%;
+    background-color: white;
+    padding-left: 5%; border-radius: 20px;
+    display: none; /* Hide initially */
+}
+.information-area.active, .notification-area.active {
+    display: block; /* Show when active */
+}
+.buttons {
+    display: flex; flex-direction: row; gap: 3%;
+    width: 100%; margin-top: -6vh;
+}
+.buttons button {
+    width: 200px; height: 60px;
+    border-radius: 30px; border: none;
+}
+.Messages, .Notifications {
+    padding-top: 10vh;
+    display: flex; flex-direction: column; gap: 30px;
+}
+.message-btn {
+    background-color: white;
+    box-shadow: 4px 4px 8px rgba(140, 140, 140, 0.3);
+}
+.notification-btn {
+    background-color: white;
+    box-shadow: 4px 4px 8px rgba(140, 140, 140, 0.3);
+}
+.full-name, .e-mail {
+    width: 70%; height: 40px;
+    border: rgba(140, 140, 140, 0.3) 1px solid;
+    border-radius: 5px;
+    display: flex; flex-direction: column; align-items: start; justify-content: center;
+}
+h5 {padding: 0 10px; margin: 0; font-size: 12px; color: #7272724d;}
+
+textarea {
+    width: 70%; height: 90px;
+    border: #7272724d solid 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.constant-area {
+    width: 30%; height: 80%;
+    display: flex; flex-direction: column; justify-content: space-evenly;
+    gap: 30px;
+}
+.profile-picture {
+    width: 80%; height: 40vh; background-color: white;
+    margin: 10px auto; border-radius: 20px;
+}
+.profile-picture img {
+    width: 100%; height: 100%; object-fit: cover; border-radius: 20px;
+}
+.constant-area h1 {
+    width: 95%; height: 60px; font-size: 13px; background-color: white;
+    margin: 0 auto; padding-left: 10px; border-radius: 10px; display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .nav-links {display: none;}
+    .link-nav-bar {justify-content: space-around;}
+    .action-area {flex-direction: column;}
+    .information-area, .notification-area {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+    .constant-area {
+        width: 100%;
+    }
+    .profile-picture {
+        width: 100%;
+        height: 30vh;
+    }
+}
